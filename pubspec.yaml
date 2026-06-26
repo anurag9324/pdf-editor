@@ -1,0 +1,34 @@
+name: pdf_editor
+description: Edit text in PDF files â€” fully offline, no internet needed.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Uses Android's BUILT-IN PdfRenderer â€” zero downloads, works offline
+  pdfx: ^2.6.0
+
+  # PDF generation for the output file
+  pdf: ^3.10.8
+
+  # File picker dialog
+  file_picker: ^6.1.1
+
+  # Temp directory for saving output
+  path_provider: ^2.1.2
+
+  # Share / "Save to Downloads" the final PDF
+  share_plus: ^7.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
